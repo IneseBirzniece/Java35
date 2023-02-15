@@ -1,3 +1,5 @@
+package basics;
+
 public class Operators {
     public static void main(String[] args) {
         //Basic operators -, +, *, /, % (modžul-izruna? dalīts, mēģina izdalīt cik reizes var, ir atlikums?)

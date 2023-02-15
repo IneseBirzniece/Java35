@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.Scanner;
 
 public class OperationsWithNumbers2 {public static void main(String[] args) {
