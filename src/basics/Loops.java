@@ -29,5 +29,12 @@ public class Loops {
             i += 3;
         }
 
+        //Do While loop
+        i=1;
+        do{
+            System.out.println("This is do while loop " +i);
+            i++;
+        }while (i<=10);
+
     }
 }
