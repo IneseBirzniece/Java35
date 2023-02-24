@@ -30,7 +30,7 @@ public class QuadraticEquations {
                     System.out.println(x);
                 }
 
-                }else {
+        }else {
             float D;
             D=b*b-4*a*c;
             System.out.println("D = " + D);
