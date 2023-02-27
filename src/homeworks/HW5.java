@@ -1,5 +1,7 @@
 package homeworks;
 
+import java.util.Scanner;
+
 public class HW5 {
     public static void main(String[] args) {
         /*      Alex is an owner of grocery store. Among many products he sells,
@@ -17,5 +19,30 @@ public class HW5 {
         amount of jam specified by Jane. Amount of jam should be read from user
         (positive int value). You can assume that there's always enough jam in Alex's shop.
         Your application should print true or false.*/
+
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Please enter amount of jam you need:");
+        int jam = scanner.nextInt();
+        int a, b, c;
+        // a = amount of jam in 7 kg jars
+        // b = amount of jam in 1 kg jars
+        // c = amount of jars
+        a = (int) (Math.floor(jam/7));
+        b = jam % 7;
+        c = a + b;
+
+
+        //chek if its even possilbe
+        if (jam <= 42) {
+            if (c <= 6){
+                System.out.println("True");
+            }else{
+                System.out.println("False");
+            }
+        }else {
+            System.out.println("Sorry, I can't buy this amount of jam.");
+        }
+
+
     }
 }
