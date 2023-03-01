@@ -27,16 +27,19 @@ public class HW5 {
         // a = amount of jam in 7 kg jars
         // b = amount of jam in 1 kg jars
         // c = amount of jars
-        a = (int) (Math.floor(jam/7));
+
+        // a = (int) (Math.floor(jam/7));
+        a = jam / 7; //because we ar using int type we don't need to round down
         b = jam % 7;
         c = a + b;
 
+        //We could also write 32-34 in one line: c = ((jam / 7) + (jam % 7))
 
         //chek if its even possilbe
         if (jam <= 42) {
             if (c <= 6){
                 System.out.println("True");
-            }else{
+            }else {
                 System.out.println("False");
             }
         }else {
