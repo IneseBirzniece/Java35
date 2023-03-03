@@ -8,6 +8,9 @@ public class TwoDimensionalArray {
         //1.row My dream cars; 2.row Friend's dream cars
         String[][] dreamCars = new String[2][5];
 
+        //different way to define objects in arrays
+        //String[][] dreamCars = new String[][]{ {"Audi", "BMW", "Jeep", "Porsche", "Hummer"} , {"Audi", "BMW", "Jeep", "Porsche", "Hummer"} }
+
         dreamCars[0][0] = "Audi";
         dreamCars[0][1] = "BMW";
         dreamCars[0][2] = "Jeep";
@@ -32,6 +35,14 @@ public class TwoDimensionalArray {
                 System.out.print(dreamCars[i][j] + " ");
             }
             System.out.println(); //to get each row in different line
+        }
+
+        //for-each loop for printing values
+        for (String[] rows : dreamCars){
+            for (String car: rows){
+                System.out.print(car + " ");
+            }
+            System.out.println();
         }
 
     }
