@@ -1,5 +1,8 @@
 package homeworks;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class HW8 {
     public static void main(String[] args) {
         /* Average grade in array:
@@ -10,5 +13,32 @@ public class HW8 {
             Using for loop ask user to enter array elements one by one
             Calculate and print out all value average
             Print out count of grades: */
+
+      /*  Scanner scanner = new Scanner(System.in);
+        System.out.println("Number of grades will be: ");
+        float numberOfGrades = scanner.nextFloat();
+
+        float[] grades = new float[numberOfGrades];
+
+        float averageGrade = 0;
+        float sumOfGrades = 0;
+
+
+        for (int i = 0; i < numberOfGrades; i++) {
+            System.out.println("Grade no. " + (i+1) + " is " );
+            if (scanner.hasNextInt()) {
+                grades[i] = scanner.nextInt();
+            }
+        }
+
+        System.out.println(Arrays.toString(grades));
+
+        for (int i = 0; i < grades.length; i++) {
+            averageGrade = (sumOfGrades += grades[i])/(i+1);
+        }
+        System.out.println(averageGrade);
+
+    }
+}*/
     }
 }
