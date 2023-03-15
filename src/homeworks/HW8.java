@@ -14,11 +14,11 @@ public class HW8 {
             Calculate and print out all value average
             Print out count of grades: */
 
-      /*  Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Number of grades will be: ");
         float numberOfGrades = scanner.nextFloat();
 
-        float[] grades = new float[numberOfGrades];
+        float[] grades = new float[(int) numberOfGrades];
 
         float averageGrade = 0;
         float sumOfGrades = 0;
@@ -36,9 +36,8 @@ public class HW8 {
         for (int i = 0; i < grades.length; i++) {
             averageGrade = (sumOfGrades += grades[i])/(i+1);
         }
-        System.out.println(averageGrade);
 
-    }
-}*/
+        System.out.format("%.2f", averageGrade);
+
     }
 }

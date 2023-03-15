@@ -28,6 +28,9 @@ public class Methods {
         //var izmantot atkārtoti; šeit printName ir parametrs
         // printName("Bob");
         // printName("Lisa");
+
+        System.out.println(sum(4, 5, 6));
+
     }
 
     //mūsu jauna metode - kaut ko print out
@@ -45,5 +48,8 @@ public class Methods {
 
     }
 
+    public static int sum (int num1, int num2, int num3){
+        return num1 + num2 + num3;
+    }
 
 }
