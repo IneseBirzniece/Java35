@@ -1,0 +1,31 @@
+package oop.inheritance;
+
+class Vehicle{
+    protected String brand;
+    public void honk(){
+        System.out.println("Tu tu");
+        System.out.println("Brand: " + brand);
+    }
+}
+
+class Bike extends Vehicle{
+    public void honk(){
+        System.out.println("Biiip, biip");
+        System.out.println("Brand: " + brand);
+    }
+}
+
+
+public class VehicleExample {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle();
+        vehicle.brand = "Tesla";
+        vehicle.honk();
+
+        Bike bike = new Bike();
+        bike.brand = "Cube";
+        bike.honk();
+
+
+    }
+}

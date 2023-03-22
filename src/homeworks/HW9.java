@@ -21,23 +21,20 @@ user for tree size.
         System.out.println("Christmas tree size will be: ");
         int ChristmasTreeSize = scanner.nextInt();
 
-        String[] ChristmasTree = new String[(int) ChristmasTreeSize];
-
-        String space = " ";
-        String star = "*";
-
-        for (int i = 0; i <= ChristmasTreeSize; i++) {
-            if (i < (ChristmasTreeSize-1)) {
-                ChristmasTree[i] = space;
-            }else{
-                ChristmasTree[i] = star;
+        for (int k = 0; k <= ChristmasTreeSize; k++) {
+            for (int i = 0; i <= ChristmasTreeSize - k; i++) {
+                System.out.print(" ");
             }
+            for (int j = 0; j <= (2 * k) - 2; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
+        for (int i = 0; i <= ChristmasTreeSize - 1; i++) {
+                System.out.print(" ");
+            }
+            System.out.println("#");
 
-        for (int i = 0; i < ChristmasTree.length; i++) {
-            System.out.println(ChristmasTree[i]);
-
-        }
     }
 }
