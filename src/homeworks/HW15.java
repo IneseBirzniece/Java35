@@ -5,10 +5,8 @@ public class HW15 {
 
     }
     //Method for rock, paper, scissors
-
+/*
     public static String rockPaperScissors(String player1, String player2){
 
-        
-
-    }
+    }*/
 }
