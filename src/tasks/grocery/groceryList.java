@@ -1,20 +1,14 @@
 package tasks.grocery;
-
 //1. addGroceryItem
 //2. printGroceryList
 //3. removeGroceryItem
 //4. modifyGroceryItem
 //5. searchItem
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class groceryList {
-
     //field
     private ArrayList<String> groceryList = new ArrayList<>();
-
-    //methods
 
     //adding a new item to the list
     public void addGroceryItem(String item){
@@ -54,7 +48,6 @@ public class groceryList {
     }
 
     //search item in the list
-
     public boolean searchItem(String searchItem){
         return findItem(searchItem) >= 0;
     }
@@ -65,13 +58,9 @@ public class groceryList {
         System.out.println("All items in the list are deleted");
     }
 
-
-
     //method for returning items index
     private int findItem(String searchItem){
         return groceryList.indexOf(searchItem);
     }
-
-
 
 }
